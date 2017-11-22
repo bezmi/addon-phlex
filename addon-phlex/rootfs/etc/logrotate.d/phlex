@@ -1,0 +1,11 @@
+data/log/phlex.log {
+	root root
+	daily
+	copytruncate
+	rotate 5
+	compress
+	delaycompress
+	notifempty
+	nomail
+}
+
