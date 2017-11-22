@@ -41,6 +41,10 @@ Run \
     && adduser -S -s /sbin/nologin phlex phlex \
     && addgroup phlex nginx \
     \
+    && cd /var/www/html/
+    && git clone https://github.com/d8ahazard/Phlex.git \
+    && cd - \
+    \
     && apk del --purge .build-dependencies
 
 ARG BUILD_ARCH
