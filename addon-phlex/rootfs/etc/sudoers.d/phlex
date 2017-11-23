@@ -7,5 +7,5 @@
 # This file is copyright under the latest version of the EUPL.
 # Please see LICENSE file for your rights under this license.
 #
-nginx ALL=NOPASSWD: /var/www/html/Phlex, /usr/bin/restart_addon
+nginx ALL=NOPASSWD: /usr/bin/restart_addon
 Defaults secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
