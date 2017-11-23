@@ -3,11 +3,11 @@
 # spellcheck disable=SC1091
 
 #source /usr/lib/hassio-addons/base.sh
-mkdir -p /data/www/html/Phlex/
 
 #fetch repository
 if [ ! -d /data/www/html/Phlex/.git ]; then
     echo "No repo found, pulling."
+    mkdir -p /data/www/html/Phlex/
     cd /data/www/html/Phlex/
     git clone https://github.com/d8ahazard/Phlex .
     cd -
