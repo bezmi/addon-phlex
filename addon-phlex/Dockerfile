@@ -27,10 +27,9 @@ Run \
         php7-session \
         php7-sockets \
         php7-xml \
-        php7-xmprpc \
+        php7-xmlrpc \
         php7-gd \
         php7-imap \
-        php7-json \
         php7-mcrypt \
         php7-mysql \
         php7-curl \
