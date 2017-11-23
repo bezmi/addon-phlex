@@ -1,5 +1,9 @@
 #!/usr/bin/with-contenv bash
 
+# spellcheck disable=SC1091
+
+source /usr/lib/hassio-addons/base.sh
+
 #fetch repository
 if [! -d /var/www/Phlex/.git ]; then
     echo "No repo found, pulling."
