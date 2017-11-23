@@ -44,6 +44,8 @@ Run \
     \
     && apk del --purge .build-dependencies
 
+VOLUME /data
+
 ARG BUILD_ARCH
 ARG BUILD_DATE
 ARG BUILD_REF
