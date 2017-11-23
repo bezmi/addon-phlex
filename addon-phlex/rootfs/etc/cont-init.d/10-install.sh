@@ -2,7 +2,7 @@
 
 # spellcheck disable=SC1091
 
-source /usr/lib/hassio-addons/base.sh
+#source /usr/lib/hassio-addons/base.sh
 mkdir /var/www/html/Phlex/
 
 #fetch repository
