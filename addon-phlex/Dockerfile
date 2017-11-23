@@ -41,7 +41,7 @@ Run \
     && adduser -S -s /sbin/nologin phlex phlex \
     && addgroup phlex nginx \
     \
-    && chmod 777 /var/www/html/Phlex/ -R \
+    && chown -R nginx /var/www/html/Phlex/ \
     \
     && apk del --purge .build-dependencies
 
