@@ -9,15 +9,15 @@ COPY rootfs /
 
 # Setup base
 Run \
-    apk add --no-cache --virtual .build-dependencies \
-        gcc \
-        musl-dev \
-        make \
-    \
-    && apk add --no-cache \
-        bind-tools \
-        wget \
-        libcap \
+    #apk add --no-cache --virtual .build-dependencies \
+    #    gcc \
+    #    musl-dev \
+    #    make \
+    #\
+    apk add --no-cache \
+        #bind-tools \
+        #wget \
+        #libcap \
         nginx \
         php7-fpm \
         php7-json \
@@ -32,22 +32,23 @@ Run \
         php7-mbstring \
         logrotate \
         libxml2 \
-        bc \
         bash \
         curl \
-        perl \
         sudo \
         git \
-        procps \
         openssl \
     \
     && addgroup -S phlex \
     && adduser -S -s /sbin/nologin phlex phlex \
     && addgroup phlex nginx \
     \
-    && chown -R nginx /var/www/html/Phlex/ \
+    && cd /var/www/html/ \
+    && git clone https://github.com/d8ahazard/Phlex \
+    && cd - \
     \
-    && apk del --purge .build-dependencies
+    && chown -R nginx /var/www/html/Phlex/
+    #\
+    #&& apk del --purge .build-dependencies
 
 ARG BUILD_ARCH
 ARG BUILD_DATE
