@@ -29,6 +29,7 @@
     },
     "schema": {
         "port": "port",
+        "fastcgiport": "port",
         "ssl": "bool",
         "certfile": "str",
         "keyfile": "str"
