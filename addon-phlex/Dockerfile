@@ -26,6 +26,8 @@ Run \
         php7-zip \
         php7-session \
         php7-sockets \
+        php7-xml \
+        php7-curl \
         logrotate \
         libxml2 \
         bc \
