@@ -14,7 +14,7 @@ Run \
         musl-dev \
         make \
     \
-    apk add --no-cache \
+    && apk add --no-cache \
         #bind-tools \
         #wget \
         #libcap \
