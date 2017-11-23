@@ -9,11 +9,11 @@ COPY rootfs /
 
 # Setup base
 Run \
-    #apk add --no-cache --virtual .build-dependencies \
-    #    gcc \
-    #    musl-dev \
-    #    make \
-    #\
+    apk add --no-cache --virtual .build-dependencies \
+        gcc \
+        musl-dev \
+        make \
+    \
     apk add --no-cache \
         #bind-tools \
         #wget \
@@ -46,9 +46,9 @@ Run \
     && git clone https://github.com/d8ahazard/Phlex \
     && cd - \
     \
-    && chown -R nginx /var/www/html/Phlex/
-    #\
-    #&& apk del --purge .build-dependencies
+    && chown -R nginx /var/www/html/Phlex/ \
+    \
+    && apk del --purge .build-dependencies
 
 ARG BUILD_ARCH
 ARG BUILD_DATE
