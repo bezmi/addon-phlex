@@ -43,10 +43,8 @@ Run \
     && addgroup phlex nginx \
     \
     && cd /var/www/html/ \
-    && git clone https://github.com/d8ahazard/Phlex \
+    && mkdir Phlex \
     && cd - \
-    \
-    && chown -R nginx /var/www/html/Phlex/ \
     \
     && apk del --purge .build-dependencies
 
