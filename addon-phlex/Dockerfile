@@ -27,6 +27,7 @@ Run \
         php7-session \
         php7-sockets \
         php7-xml \
+        php7-simplexml \
         php7-curl \
         php7-mbstring \
         logrotate \
