@@ -15,9 +15,9 @@ Run \
         make \
     \
     && apk add --no-cache \
-        #bind-tools \
-        #wget \
-        #libcap \
+        bind-tools \
+        wget \
+        libcap \
         nginx \
         php7-fpm \
         php7-json \

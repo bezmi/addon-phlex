@@ -22,6 +22,7 @@
     ],
     "options": {
         "port": 5001,
+        "fastcgiport": 9011,
         "ssl": true,
         "certfile": "fullchain.pem",
         "keyfile": "privkey.pem"

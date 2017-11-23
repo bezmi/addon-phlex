@@ -11,6 +11,7 @@ declare certfile
 declare keyfile
 
 port=$(hass.config.get 'port')
+fastcgiport=$(hass.config.get 'fastcgiport')
 
 if hass.config.true 'ssl'; then
     rm /etc/nginx/nginx.conf
@@ -24,3 +25,5 @@ if hass.config.true 'ssl'; then
 fi
 
 sed -i "s/%%port%%/${port}/g" /etc/nginx/nginx.conf
+sed -i "s/%%fastcgiport%%/${fastcgiport}/g" /etc/nginx/nginx.conf
+sed -i "s/%%fastcgiport%%/${fastcgiport}/g" /etc/php7/php-fpm.d/www.conf
