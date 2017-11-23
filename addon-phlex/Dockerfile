@@ -42,10 +42,6 @@ Run \
     && adduser -S -s /sbin/nologin phlex phlex \
     && addgroup phlex nginx \
     \
-    && cd /var/www/html/ \
-    && mkdir Phlex \
-    && cd - \
-    \
     && apk del --purge .build-dependencies
 
 ARG BUILD_ARCH
