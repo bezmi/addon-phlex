@@ -17,14 +17,12 @@
     "privledged": [
         "NET_ADMIN"
     ],
-    "ports": {
-        "80/tcp":5123,
-        "9000/tcp":9123
-    },
     "map": [
         "ssl:rw"
     ],
     "options": {
+        "port": 5123,
+        "fastcgiport":9123,
         "ssl": true,
         "certfile": "fullchain.pem",
         "keyfile": "privkey.pem"

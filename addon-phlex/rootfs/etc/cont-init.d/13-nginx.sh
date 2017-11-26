@@ -8,6 +8,8 @@ source /usr/lib/hassio-addons/base.sh
 
 declare certfile
 declare keyfile
+declare port
+declare fastcgiport
 
 port=$(hass.config.get 'port')
 fastcgiport=$(hass.config.get 'fastcgiport')
@@ -22,3 +24,7 @@ if hass.config.true 'ssl'; then
     sed -i "s/%%certfile%%/${certfile}/g" /etc/nginx/nginx.conf
     sed -i "s/%%keyfile%%/${keyfile}/g" /etc/nginx/nginx.conf
 fi
+
+sed -i "s/%%port%%/${port}/g" /etc/nginx/nginx.conf
+sed -i "s/%%fastcgiport%%/${fastcgiport}/g" /etc/nginx/nginx.conf
+sed -i "s/%%fastcgiport%%/${fastcgiport}/g" /etc/php7/php-fpm.d/www.conf
