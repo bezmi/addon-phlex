@@ -18,11 +18,8 @@
         "NET_ADMIN"
     ],
     "map": [
-<<<<<<< HEAD
         "ssl",
-=======
         "ssl:rw",
->>>>>>> ca92332eea41d18498c6950bae7bb117b0fd1797
         "share:rw"
     ],
     "ports": {
@@ -31,11 +28,8 @@
     },
     "options": {
         "port": 5123,
-<<<<<<< HEAD
         "fastcgiport": 9123,
-=======
         "fastcgiport":9123,
->>>>>>> ca92332eea41d18498c6950bae7bb117b0fd1797
         "ssl": true,
         "certfile": "fullchain.pem",
         "keyfile": "privkey.pem"
