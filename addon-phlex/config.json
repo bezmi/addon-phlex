@@ -3,7 +3,7 @@
     "version": "dev",
     "slug": "phlex",
     "description": "Voice control for plex with Google assistant - repackaged for Hass.io",
-    "webui": "[PROTO:ssl]://[HOST]:[PORT:5001]/Phlex/index.php",
+    "webui": "[PROTO:ssl]://[HOST]:[PORT:5123]/Phlex/index.php",
     "startup": "system",
     "arch": [
         "aarch64",
@@ -18,8 +18,13 @@
         "NET_ADMIN"
     ],
     "map": [
-        "ssl:rw"
+        "ssl:rw",
+        "share:rw"
     ],
+    "ports": {
+        "5123/tcp": 5123,
+        "9123/tcp": 9123
+    },
     "options": {
         "port": 5123,
         "fastcgiport":9123,
@@ -28,6 +33,8 @@
         "keyfile": "privkey.pem"
     },
     "schema": {
+        "port": "port",
+        "fastcgiport": "port",
         "ssl": "bool",
         "certfile": "str",
         "keyfile": "str"
