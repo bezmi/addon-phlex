@@ -4,8 +4,8 @@
 
 source /usr/lib/hassio-addons/base.sh
 
-declare port
-declare fastcgiport
+#declare port
+#declare fastcgiport
 #declare certfile
 #declare keyfile
 
