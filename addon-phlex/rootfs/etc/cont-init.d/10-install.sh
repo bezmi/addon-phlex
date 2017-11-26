@@ -17,8 +17,7 @@ echo "Updating Phlex."
 cd /data/www/html/Phlex/
 git pull
 touch config.ini.php
-mv config.ini.php /share
-ln -s /share/config.ini.php /data/www/html/Phlex/config.ini.php
 
 #Permissions
 chown -R nginx /data/www/html/Phlex/
+ln -s /data/www/html/Phlex/config.ini.php /share/config.ini.php
