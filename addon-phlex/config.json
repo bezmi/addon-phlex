@@ -25,15 +25,11 @@
         "ssl:rw"
     ],
     "options": {
-        "port": 5001,
-        "fastcgiport": 9011,
         "ssl": true,
         "certfile": "fullchain.pem",
         "keyfile": "privkey.pem"
     },
     "schema": {
-        "port": "port",
-        "fastcgiport": "port",
         "ssl": "bool",
         "certfile": "str",
         "keyfile": "str"
