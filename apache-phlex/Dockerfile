@@ -59,7 +59,7 @@ ARG BUILD_REF
 ARG BUILD_VERSION
 
 LABEL \
-    io.hass.name="Phlex" \
+    io.hass.name="Phlex Apache" \
     io.hass.description="Hass.io instance" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
