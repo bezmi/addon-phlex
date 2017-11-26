@@ -17,7 +17,7 @@ echo "Updating Phlex."
 cd /data/www/html/Phlex/
 git pull
 
-if [ ! -f /share/config.ini.php]; then
+if [ ! -f /share/config.ini.php ]; then
     echo "config file not found, creating in /share"
     touch /share/config.ini.php
 fi
