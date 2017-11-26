@@ -1,0 +1,18 @@
+#################
+## Ignore user-generated files
+#################
+/commands*
+/config*
+/composer.lock
+/.idea/*
+new_body.html
+new_body.php
+new_css/
+new_img/
+new_index.php
+new_js/
+/cacert.pem
+
+/logs/
+/img/cache/
+/manifest.json
