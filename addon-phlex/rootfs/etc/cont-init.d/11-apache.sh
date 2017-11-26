@@ -4,13 +4,13 @@
 
 source /usr/lib/hassio-addons/base.sh
 
-#declare port
-#declare fastcgiport
-#declare certfile
-#declare keyfile
+declare port
+declare fastcgiport
+declare certfile
+declare keyfile
 
-port = $(hass.config.get 'port')
-fastcgiport = $(hass.config.get 'fastcgiport')
+port=$(hass.config.get 'port')
+fastcgiport=$(hass.config.get 'fastcgiport')
 
 sed -i "s/%%port%%/${port}/g" /etc/apache2/httpd.conf
 sed -i "s/%%fastcgiport%%/${fastcgiport}/g" /etc/apache2/httpd.conf
