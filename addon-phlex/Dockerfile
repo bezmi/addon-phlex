@@ -18,7 +18,8 @@ Run \
         bind-tools \
         wget \
         libcap \
-        nginx \
+        apache2-proxy \
+        apache2-utils \
         php7-fpm \
         php7-json \
         php7-openssl \
@@ -40,9 +41,15 @@ Run \
     \
     && addgroup -S phlex \
     && adduser -S -s /sbin/nologin phlex phlex \
-    && addgroup phlex nginx \
-    \
+    #&& addgroup phlex nginx \
+    #\
     && apk del --purge .build-dependencies
+
+RUN mkdir -p /run/apache2/
+RUN ln -sf /dev/stdout /var/log/apache2/access.log && \
+    ln -sf /dev/stderr /var/log/apache2/error.log
+
+EXPOSE 80 443
 
 VOLUME /data
 
@@ -52,7 +59,7 @@ ARG BUILD_REF
 ARG BUILD_VERSION
 
 LABEL \
-    io.hass.name="Phlex" \
+    io.hass.name="Phlex Apache" \
     io.hass.description="Hass.io instance" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
