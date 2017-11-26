@@ -19,5 +19,6 @@ git pull
 touch config.ini.php
 
 #Permissions
+ln -s /share/config.ini.php /data/www/html/Phlex/config.ini.php
+chown nginx /share/config.ini.php
 chown -R nginx /data/www/html/Phlex/
-ln -s /data/www/html/Phlex/config.ini.php /share/config.ini.php
