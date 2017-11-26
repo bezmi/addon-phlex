@@ -17,8 +17,12 @@
     "privledged": [
         "NET_ADMIN"
     ],
+    "ports": {
+        "80/tcp":5123,
+        "9000/tcp":9123
+    },
     "map": [
-        "ssl"
+        "ssl:rw"
     ],
     "options": {
         "port": 5001,
