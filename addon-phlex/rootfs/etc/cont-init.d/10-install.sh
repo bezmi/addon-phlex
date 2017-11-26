@@ -16,6 +16,7 @@ fi
 echo "Updating Phlex."
 cd /data/www/html/Phlex/
 git pull
+touch config.ini.php
 mv config.ini.php /share
 ln -s /share/config.ini.php /data/www/html/Phlex/config.ini.php
 
