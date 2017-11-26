@@ -24,6 +24,6 @@ if [ ! -f /share/config.ini.php ]; then
 fi
 
 #Permissions
-ln -s /share/config.ini.php /data/www/html/Phlex/config.ini.php
+ln -s /share/config.ini.php /data/www/localhost/htdocs/Phlex/config.ini.php
 chown apache /share/config.ini.php
 chown -R apache /data/www/localhost/htdocs/Phlex/
