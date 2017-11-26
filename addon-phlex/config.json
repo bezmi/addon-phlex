@@ -28,7 +28,6 @@
     },
     "options": {
         "port": 5123,
-        "fastcgiport": 9123,
         "fastcgiport":9123,
         "ssl": true,
         "certfile": "fullchain.pem",
