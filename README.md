@@ -8,3 +8,4 @@ The configuration file is stored in /share/ and symlinked to the Phlex directory
 The Phlex directory is symlinked to /var/www/localhost/htdocs/Phlex while I work out some issues with the apache configuration
 
 refer to https://home-assistant.io/hassio/installing_third_party_addons/ for installation instructions
+Note: I'm no longer maintaining this repo. It might still work, but I can't offer too much support
